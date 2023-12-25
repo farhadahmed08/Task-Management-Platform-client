@@ -1,0 +1,45 @@
+[
+    {
+      "title": "Complete Report",
+      "description": "Finish the quarterly report for the team meeting.",
+      "deadline": "2023-01-31",
+      "priority": "Low",
+      "status": "to-do"
+    },
+    {
+      "title": "Prepare Presentation",
+      "description": "Create a presentation for the upcoming client meeting.",
+      "deadline": "2023-02-15",
+      "priority": "Moderate", 
+      "status": "ongoing"
+    },
+    {
+      "title": "Fix Critical Bug",
+      "description": "Address and resolve the critical bug reported by the QA team.",
+      "deadline": "2023-01-20",
+      "priority": "High",
+      "status": "completed"
+    },
+    {
+      "title": "Review Code",
+      "description": "Conduct a code review for the recent feature implementation.",
+      "deadline": "2023-02-10",
+      "priority": "Medium",
+      "status": "completed"
+    },
+    {
+      "title": "Update Documentation",
+      "description": "Revise and update the project documentation.",
+      "deadline": "2023-03-01",
+      "priority": "Low", 
+      "status": "to-do"
+    },
+    {
+      "title": "Emergency Server Maintenance",
+      "description": "Perform urgent maintenance on the production server to address performance issues.",
+      "deadline": "2023-01-15",
+      "priority": "High",
+      "status": "ongoing"
+    }
+  ]
+  

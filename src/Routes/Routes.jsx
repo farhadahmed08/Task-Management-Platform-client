@@ -6,9 +6,14 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
-import Dashboard from "../Layout/Dashboard";
-import PrivateRoute from "./PrivateRoute";
+
 import UserHome from "../Pages/Dashboard/UserHome/UserHome";
+import TaskManagement from "../Pages/Dashboard/TaskManagement/TaskManagement";
+import AddTask from "../Pages/Dashboard/AddTask/AddTask";
+import UpdateTask from "../Pages/Dashboard/UpdateTask/UpdateTask";
+import Blog from "../Pages/Blog/Blog";
+import PrivateRoute from './PrivateRoute';
+import Dashboard from "../Layout/Dashboard";
 
 
   export const router = createBrowserRouter([
@@ -30,6 +35,10 @@ import UserHome from "../Pages/Dashboard/UserHome/UserHome";
           path: 'signup',
           element: <SignUp></SignUp>
         },
+        {
+          path: 'blog',
+          element: <Blog/>
+        },
        
       ]
     },
@@ -37,10 +46,28 @@ import UserHome from "../Pages/Dashboard/UserHome/UserHome";
         path:'dashboard',
         element:<PrivateRoute><Dashboard/></PrivateRoute>,
         children:[
-          // normal user routes
+        
           {
             path:'userHome',
             element:<UserHome/>
+          },
+          {
+            path:'taskManagement',
+            element:<TaskManagement/>
+          },
+          {
+            path:'taskManagement',
+            element:<TaskManagement/>
+          },
+          {
+            path:'addTask',
+            element:<AddTask/>
+          },
+          {
+            path:'updateItem/:id',
+            element:<UpdateTask/>,
+            loader: ({params})=> fetch(`http://localhost:5000/task/${params.id}`)
+      
           },
         
         ]
