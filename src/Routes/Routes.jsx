@@ -66,7 +66,7 @@ import Dashboard from "../Layout/Dashboard";
           {
             path:'updateItem/:id',
             element:<UpdateTask/>,
-            loader: ({params})=> fetch(`http://localhost:5000/task/${params.id}`)
+            loader: ({params})=> fetch(`https://task-managment-platform-server.vercel.app/task/${params.id}`)
       
           },
         
